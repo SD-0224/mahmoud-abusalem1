@@ -47,23 +47,84 @@ body {
   border-radius: 5px;
   border: 2px solid var(--lines-color);
 }
-#welcome-color{
+#welcome-color {
   font-size: larger;
   font-weight: 900;
   color: var(--brand-secondary);
 }
-.welcome-statement-decoration{
+.welcome-statement-decoration {
   width: 30%;
   margin: 0 auto;
   text-align: left;
 }
-.main-decoration{
+.main-decoration {
+  
   display: flex;
   flex-direction: column;
-  
 }
-.welcome-statement-decoration span{
+.welcome-statement-decoration span {
   display: block;
+}
+.search-bar{
+  width: 100%;
+  margin-top: 20px;
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
+#dropDownDiv{
+  position: relative;
+  display: inline-block;
+  width: 10%;
+  
+}
+#dropDown{
+  
+  width: 100%;
+  padding: 10px;
+  padding-top: 20px;
+  
+}
+
+
+#search{
+  width: 100%;
+  padding: 10px;
+  padding-top: 20px;
+}
+.content{
+  display: flex;
+  padding: none;
+  width: 100%;
+  background-color:var(--bg_body);
+
+}
+
+.sort-label {
+  font-size:x-small;
+  font-weight: 700;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  z-index: 1;
+  padding: 0 5px;
+  padding-left: 10px;
+  color: #333; /* Change text color if needed */
+}
+.search-icon {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+
+ 
+}
+#searchWithIcon{
+  position: relative;
+  width: 65%;
+
+}
+
+
+
