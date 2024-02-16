@@ -27,10 +27,9 @@
     </nav>
     <main class="main-decoration">
       <div>
-        <div>
-          <div></div>
-          <div></div>
-  
+        <div class="triangles">
+          <div class="left-triangle"></div>
+          <div class="right-triangle"></div>
         </div>
   
         <div class="welcome-statement-decoration">
@@ -41,11 +40,11 @@
         <div class="search-bar">   
           <div id="searchWithIcon">
             <ion-icon name="search-outline" class="search-icon"></ion-icon>
-            <input type="text" id="search" name="fname" placeholder="Searth the website...">  
+            <input type="text" id="search" name="fname" placeholder=" Searth the website...">  
           </div>
           <div id="dropDownDiv">
             <label class="sort-label">Sort by:</label>
-            <select name="" id="dropDown" >
+            <select name="" id="leftDropDown" >
               <option value="default" selected hidden>Default</option>
               <option value="name">Name</option>
               <option value="rating">Rating</option>
@@ -56,7 +55,7 @@
 
           <div id="dropDownDiv">
             <label class="sort-label">Sort by:</label>
-            <select name="" id="dropDown">
+            <select name="" id="rightDropDown">
               <option value="default" selected hidden>Default</option>
               <option value="name">Name</option>
               <option value="rating">Rating</option>
@@ -68,12 +67,26 @@
           
         
       </div>
+      <div id="result">
+        "24" Web Topics Found
+
       </div>
-     
-      
+      <div class="card-table">
+        <div class="card">
+         <img  id ="img" src="./icons/css.webp" alt="Avatar" width="100%" >
+          <div class="container">
+            <h4><b>John Doe</b></h4> 
+            <p>Architect & Engineer</p> 
+          </div>
+          </div>
+         
+        </div>
       
 
 
+
+
+      </div>
     </main>
   </body>
 </html>

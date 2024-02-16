@@ -48,7 +48,7 @@ body {
   border: 2px solid var(--lines-color);
 }
 #welcome-color {
-  font-size: larger;
+  font-size: x-large;
   font-weight: 900;
   color: var(--brand-secondary);
 }
@@ -56,6 +56,8 @@ body {
   width: 30%;
   margin: 0 auto;
   text-align: left;
+  margin-top: -30px;
+  margin-bottom: 20px;
 }
 .main-decoration {
   
@@ -63,39 +65,49 @@ body {
   flex-direction: column;
 }
 .welcome-statement-decoration span {
+  font-size: medium;
   display: block;
 }
 .search-bar{
   width: 100%;
   margin-top: 20px;
-  
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 #dropDownDiv{
   position: relative;
   display: inline-block;
   width: 10%;
-  
 }
-#dropDown{
-  
+#leftDropDown{
   width: 100%;
   padding: 10px;
   padding-top: 20px;
-  
+  padding-bottom: 15px;
 }
-
-
-#search{
+#rightDropDown{
   width: 100%;
   padding: 10px;
   padding-top: 20px;
+  padding-bottom: 15px;
+  border-radius: 0px 10px 10px 0px; 
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  padding-left: 30px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  border: 2px solid var(--lines-color);
+  border-radius: 10px 0px 0px 10px;
+  width: calc(100% - 40px); 
+  margin-left: 40px; 
 }
 .content{
   display: flex;
+  flex-direction: column;
   padding: none;
   width: 100%;
   background-color:var(--bg_body);
@@ -111,20 +123,65 @@ body {
   z-index: 1;
   padding: 0 5px;
   padding-left: 10px;
-  color: #333; /* Change text color if needed */
+  color: #333; 
 }
 .search-icon {
   position: absolute;
-  top: 40%;
-  left: 10px;
-
- 
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
 }
-#searchWithIcon{
+
+#searchWithIcon {
   position: relative;
   width: 65%;
 
 }
 
+#result{
+  margin: 15px;
+  font-size: x-large;
+  font-weight: bolder;
+  padding-left: 170px;
+  
 
 
+}
+.left-triangle{
+  position:absolute;
+  width: 0;
+  height: 0;
+  border-top: 100px solid var(--brand-primary) ;
+  border-right: 1600px solid transparent;
+  
+}
+.right-triangle{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 100px solid var(--brand-secondary);
+  border-left: 2000px solid transparent;
+  z-index: -1;
+  
+}
+.triangles{
+  display: flex;
+  
+  
+}
+.card-table{
+  
+  width: 40%;
+}
+.card:hover {
+  transform: translateY(-10px);
+  
+}
+#img{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
+  }
+.card{
+  border-radius: 20px;
+  background-color: white;
+}
