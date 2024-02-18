@@ -39,6 +39,7 @@ nav {
   font-weight: bold;
 }
 body {
+  margin: 0;
   font-family: "Nunito Sans", sans-serif;
 }
 #nav-button {
@@ -170,18 +171,32 @@ body {
   
 }
 .card-table{
-  
-  width: 40%;
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+  margin-inline: 145px;
+  justify-items: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
 }
 .card:hover {
   transform: translateY(-10px);
   
 }
 #img{
+  height: 50%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px; 
   }
 .card{
+  
+  margin: 20px;
+  width:250px ;
   border-radius: 20px;
   background-color: white;
 }
+@media screen and (max-width: 600px) {
+  .card {
+      width: calc(50% - 10px); /* 50% width minus half the gap */
+  }
+}
+
