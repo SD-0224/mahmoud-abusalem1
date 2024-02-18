@@ -185,14 +185,14 @@ body {
 .img{
   height: 13vh;
   margin-bottom: -10px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
   }
 .card{
   
   margin: 20px;
   width:250px ;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: white;
 }
 .container{
