@@ -182,8 +182,9 @@ body {
   transform: translateY(-10px);
   
 }
-#img{
-  height: 50%;
+.img{
+  height: 13vh;
+  margin-bottom: -10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px; 
   }
@@ -193,6 +194,21 @@ body {
   width:250px ;
   border-radius: 20px;
   background-color: white;
+}
+.container{
+  margin: 10px;
+}
+.category{
+  margin-top: -30px;
+}
+.topic{
+  margin-top: -15px;
+}
+.rating{
+  color: #e9961a;
+}
+.author{
+  font-weight: 200;
 }
 @media screen and (max-width: 600px) {
   .card {
