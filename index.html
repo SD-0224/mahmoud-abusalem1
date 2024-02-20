@@ -12,22 +12,23 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
     rel="stylesheet" />
+    
 
   <title>Document</title>
 </head>
 
 <body>
-  <nav>
+  <nav class="header">
     <div class="nav-decoration">
       <div id="title">Web Topics</div>
       <div class="buttons-decoration">
-        <button id="nav-button"> <ion-icon name="moon-outline"></ion-icon></span> Dark Mode</button>
-        <button id="nav-button"> <ion-icon name="heart-outline"></ion-icon> Favourites</button>
+        <button id="nav-button-dark"> <ion-icon name="moon-outline"></ion-icon></span> Dark Mode</button>
+        <button id="nav-button-favourites"> <ion-icon name="heart-outline"></ion-icon> Favourites</button>
       </div>
     </div>
   </nav>
   <main class="main-decoration">
-    <div>
+    <div class="header">
       <div class="triangles">
         <div class="left-triangle"></div>
         <div class="right-triangle"></div>
@@ -42,12 +43,13 @@
       <div class="search-bar">
         <div id="searchWithIcon">
           <ion-icon name="search-outline" class="search-icon"></ion-icon>
-          <input type="text" id="search" name="fname" placeholder=" Searth the website...">
+          <input type="text" id="search" name="fname" placeholder=" Search the website...">
         </div>
+        <div class="filter">
         <div id="dropDownDiv">
           <label class="sort-label">Sort by:</label>
           <select name="" id="leftDropDown">
-            <option value="default" selected hidden>Default</option>
+            <option value="default" selected hidden id="default">Default</option>
             <option value="name">Name</option>
             <option value="rating">Rating</option>
             <option value="catigory">Category</option>
@@ -65,9 +67,7 @@
 
           </select>
         </div>
-
-
-
+      </div>
       </div>
       <div id="result">
         "24" Web Topics Found
@@ -75,102 +75,14 @@
       </div>
       <div id="wrapper">
         <div class="card-table">
+          
           <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
+            <img class="img" src="./icons/html.png" alt="Avatar" width="100%">
             <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img" src="./icons/css.webp" alt="Avatar" width="100%">
-            <div class="container">
-              <h4><b>Web Development Languages</b></h4>
-              <p>CSS</p>
+              <p class="Category">Web Development Languages</p>
+              <h4 class="topic">HTML</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Sarah Smith</p>
             </div>
           </div>
           <div class="card">
@@ -178,10 +90,335 @@
             <div class="container">
               <p class="Category">Web Development Languages</p>
               <h4 class="topic">CSS</h4>
-              <ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
               <p class="author">Author: David lee</p>
             </div>
           </div>
+          <div class="card">
+            <img class="img" src="./icons/javascript.jpg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Languages</p>
+              <h4 class="topic">JavaScript</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Emily Chen</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/jquery.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Frontend Frameworks and Libraries</p>
+              <h4 class="topic">jQuery</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">John Johnson</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/angular.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Frontend Frameworks and Libraries</p>
+              <h4 class="topic">Angular</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Jessica Davis</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/react.webp" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Frontend Frameworks and Libraries</p>
+              <h4 class="topic">React</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Daniel Brown</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/vuejs.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Frontend Frameworks and Libraries</p>
+              <h4 class="topic">Vue.js</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Ava Jones</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/nodejs.webp" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Backend Frameworks and Libraries</p>
+              <h4 class="topic">Node.js</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Michael Kim</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/expressjs.webp" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Backend Frameworks and Libraries</p>
+              <h4 class="topic">Express.js</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Sophia Rodriguez</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/ruby.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Backend Frameworks and Libraries</p>
+              <h4 class="topic">Ruby on Rails</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">William Lee</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/django.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Backend Frameworks and Libraries</p>
+              <h4 class="topic">Django</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Olivia Martinez</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/flask.webp" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Backend Frameworks and Libraries</p>
+              <h4 class="topic">Flask</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Ethan Thompson</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/sql.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Databases and APIs</p>
+              <h4 class="topic">SQL</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Madison Davis</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/nosql.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Databases and APIs</p>
+              <h4 class="topic">NoSQL</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Isabella Wilson</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/restapi.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Databases and APIs</p>
+              <h4 class="topic">REST APIs</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Jacob Garcia</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/graphql.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Databases and APIs</p>
+              <h4 class="topic">GraphQL</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Mia Brown</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/oauth.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">OAuth</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Evelyn Nguyen</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/json.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">JSON</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Liam Hernandez</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/ajax.gif" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">AJAX</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Avery Perez</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/websockets.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Websockets</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Victoria Kim</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/responsive.gif" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Responsive Design</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Ryan Jones</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/accessibility.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Accessibility</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Samantha Martin</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/ux.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">User Experience (UX)</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Luke Davis</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/design-systems.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Design Systems</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Noah Martinez</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/performance.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Performance Optimization</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Chloe Taylor</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/cross-browser.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Cross-Browser Compatibility</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">David Lee</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/seo.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Search Engine Optimization (SEO)</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Emily Kim</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/web-security.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Web Security</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Gabriel Hernandez</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/testing.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Testing and Debugging</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Avery Perez</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/ci-cd.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Continuous Integration/Continuous Deployment (CI/CD)</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Madison Davis</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/devops.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">DevOps</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Isabella Wilson</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/cloud.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Cloud Computing</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Jacob Garcia</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/docker.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Docker</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Mia Brown</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/microservices.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Microservices</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Evelyn Nguyen</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/pwa.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Progressive Web Apps (PWA)</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Liam Hernandez</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/wai.jpeg" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Web Accessibility Initiative (WAI)</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Avery Perez</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/cms.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Content Management Systems (CMS)</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Victoria Kim</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img" src="./icons/analytics.png" alt="Avatar" width="100%">
+            <div class="container">
+              <p class="Category">Web Development Concepts and Technologies</p>
+              <h4 class="topic">Web Analytics</h4>
+              <div class="stars"><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon><ion-icon name="star" class="rating"></ion-icon></div>
+              <p class="author">Ryan Jones</p>
+            </div>
+          </div>
+         
 
         </div>
 
@@ -191,5 +428,47 @@
     </div>
   </main>
 </body>
+<script>
+  let flag = 0;
+  document
+    .getElementById("nav-button-dark")
+    .addEventListener("click", () => {
+      if (flag === 0) {
+        document.documentElement.style.setProperty(
+          "--brand-primary",
+          "#0768ac"
+        );
+        document.documentElement.style.setProperty(
+          "--brand-secondary",
+          "#03c180"
+        );
+        document.documentElement.style.setProperty("--bg_default", "#1a1a1a");
+        document.documentElement.style.setProperty("--bg_body", "#282828");
+        document.documentElement.style.setProperty(
+          "--lines-color",
+          "#000000"
+        );
+        document.documentElement.style.setProperty("--body-text", "#ededed");
+        flag = 1;
+      } else if (flag === 1) {
+        document.documentElement.style.setProperty(
+          "--brand-primary",
+          "#0768ac"
+        );
+        document.documentElement.style.setProperty(
+          "--brand-secondary",
+          "#03c180"
+        );
+        document.documentElement.style.setProperty("--bg_default", "#ffffff");
+        document.documentElement.style.setProperty("--bg_body", "#f0f9ff");
+        document.documentElement.style.setProperty(
+          "--lines-color",
+          "#dddddd"
+        );
+        document.documentElement.style.setProperty("--body-text", "#333333");
+        flag = 0;
+      }
+    });
+</script>
 
 </html>

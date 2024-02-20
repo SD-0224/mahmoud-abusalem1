@@ -14,7 +14,16 @@
   --dark-lines-color: #000000;
   --dark-body-text: #ededed;
   --dark-heart-color: #dc143c;
+  --auther :#8E8E8E;
 }
+*{
+  box-sizing: border-box;
+  color: var(--body-text);
+}
+.header{
+  background-color: var(--bg_default);
+}
+
 .nav-decoration {
   width: 95%;
   display: flex;
@@ -34,16 +43,29 @@ nav {
   align-items: center;
 }
 #title {
+  padding-top: 10px;
   color: var(--brand-primary);
   font-size: large;
   font-weight: bold;
 }
 body {
+  background-color: var(--bg_body);
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#nav-button {
-  background-color: transparent;
+#nav-button-favourites {
+  background-color: var(--bg_default);
+  color: var(--body-text);
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid var(--lines-color);
+}
+#nav-button-dark {
+  background-color: var(--bg_default);
+  color: var(--body-text);
   padding: 5px;
   border-radius: 5px;
   border: 2px solid var(--lines-color);
@@ -52,13 +74,16 @@ body {
   font-size: x-large;
   font-weight: 900;
   color: var(--brand-secondary);
+  width: 445px;
 }
 .welcome-statement-decoration {
-  width: 30%;
+  width: 100vw;
   margin: 0 auto;
-  text-align: left;
-  margin-top: -30px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  
 }
 .main-decoration {
   
@@ -67,148 +92,194 @@ body {
 }
 .welcome-statement-decoration span {
   font-size: medium;
-  display: block;
-}
-.search-bar{
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#dropDownDiv{
-  position: relative;
-  display: inline-block;
-  width: 10%;
-}
-#leftDropDown{
-  width: 100%;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 15px;
-}
-#rightDropDown{
-  width: 100%;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 15px;
-  border-radius: 0px 10px 10px 0px; 
+  width: 445px;
+ 
 }
 
-#search {
-  width: 100%;
-  padding: 10px;
-  padding-left: 30px;
-  padding-bottom: 15px;
-  padding-top: 20px;
-  border: 2px solid var(--lines-color);
-  border-radius: 10px 0px 0px 10px;
-  width: calc(100% - 40px); 
-  margin-left: 40px; 
-}
+
+
+
+
 .content{
   display: flex;
   flex-direction: column;
   padding: none;
   width: 100%;
-  background-color:var(--bg_body);
+  background-color: var(--bg_body);
+  align-items: center;
 
 }
-
-.sort-label {
-  font-size:x-small;
-  font-weight: 700;
-  position: absolute;
-  top: 3px;
-  left: 0;
-  z-index: 1;
-  padding: 0 5px;
-  padding-left: 10px;
-  color: #333; 
-}
-.search-icon {
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  transform: translateY(-50%);
+#wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
 
-#searchWithIcon {
-  position: relative;
-  width: 65%;
-
+#default{
+  color: var(--body-text);
 }
+
+
+
 
 #result{
+  color: var(--body-text);
   margin: 15px;
   font-size: x-large;
   font-weight: bolder;
-  padding-left: 170px;
+  width: 90vw;    
+  margin-bottom: 25px;
+
   
 
 
 }
-.left-triangle{
-  position:absolute;
+
+.welcome-statement-decoration span{
+  color: var(--body-text);
+}
+.left-triangle {
+  position: absolute;
   width: 0;
   height: 0;
-  border-top: 100px solid var(--brand-primary) ;
-  border-right: 1600px solid transparent;
+  border-top: 50px solid var(--brand-primary); /* Using vw (viewport width) unit */
+  border-right: 80vw solid transparent; /* Adjust the width relative to the container */
+  z-index: 1;
+}
+
+.right-triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 50px solid var(--brand-secondary);
+    border-left: 80vw solid transparent;
+    left: 20vw;
   
 }
-.right-triangle{
-  position: relative;
-  width: 0;
-  height: 0;
-  border-top: 100px solid var(--brand-secondary);
-  border-left: 2000px solid transparent;
-  z-index: -1;
-  
-}
-.triangles{
-  display: flex;
-  
-  
+
+.triangles {
+  position: relative; /* Ensure the triangles are positioned relative to this container */
+  width: 100vw; /* Make the container full width */ /* Make the container full height */
 }
 .card-table{
-  width: 85%;
+  width: 90vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
-  margin-inline: 145px;
-  justify-items: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  grid-template-columns: repeat(auto-fit, 236px);
+  justify-content: space-between;
+  gap: 29px;
 }
 .card:hover {
   transform: translateY(-10px);
   
 }
 .img{
-  height: 13vh;
+  min-height: 140px;
+  object-fit: cover;
   margin-bottom: -10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px; 
   }
 .card{
   
-  margin: 20px;
-  width:250px ;
+  width: 236px;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--bg_default);
 }
 .container{
-  margin: 10px;
+  padding: 13px;
+  padding-top: 4px;
 }
-.category{
-  margin-top: -30px;
+.Category{
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--body-text);
+  margin-bottom: 0;
+
 }
 .topic{
-  margin-top: -15px;
+  color: var(--body-text);
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 .rating{
   color: #e9961a;
 }
 .author{
+  color: var(--auther);
   font-weight: 200;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  
+}
+.search-bar{
+  display: flex;
+  width: 90vw;
+  border: 1px solid var(--lines-color);
+  background-color: var(--bg_default);
+  height: 55px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 5px 1px var(--lines-color);
+  border-radius: 10px;
+}
+#searchWithIcon{
+  display: flex;
+  width: calc(65vw + 30px);
+  justify-content: space-around;
+  align-items: center;
+}
+#searchWithIcon ion-icon{
+  width: 30px;
+  font-size: 20px;
+  color: var(--body-text);
+
+}
+#searchWithIcon input{
+  width: 65vw;
+  background-color: var(--bg_default);
+  border: 0;
+  font-size: 20px;
+  height: 45px;
+  padding: 0;
+
+}
+.filter{
+  display: flex;
+  width: calc(25vw - 30px);
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+
+}
+#dropDownDiv{
+  width: calc(12vw - 15px);
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid var(--lines-color);
+
+  
+}
+#dropDownDiv select{
+  border: 0;
+  width: calc(10vw - 15px);
+  height: 30px;
+  background-color: var(--bg_default);
+
+}
+.sort-label{
+  font-size: 12px;
+  background-color: var(--bg_default);
+  font-weight: 500;
+  width: calc(10vw - 20px) ;
+}
+.stars{
+  display: flex;
+  align-items: center;
+  height: 20px;
 }
 @media screen and (max-width: 600px) {
   .card {
