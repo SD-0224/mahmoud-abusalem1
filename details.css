@@ -1,0 +1,238 @@
+:root {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #ffffff;
+  --bg_body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+
+  --dark-brand-primary: #0768ac;
+  --dark-brand-secondary: #03c180;
+  --dark-bg_default: #1a1a1a;
+  --dark-bg_body: #282828;
+  --dark-lines-color: #000000;
+  --dark-body-text: #ededed;
+  --dark-heart-color: #dc143c;
+  --auther: #8e8e8e;
+}
+* {
+  box-sizing: border-box;
+  color: var(--body-text);
+}
+.header {
+  background-color: var(--bg_default);
+}
+#credits {
+  font-size: small;
+  color: var(--body-text);
+  align-self: center;
+  margin: 5px;
+}
+
+.nav-decoration {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.buttons-decoration {
+  padding: 5px;
+  justify-content: space-between;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+  padding-top: 10px;
+  color: var(--brand-primary);
+  font-size: x-large;
+  font-weight: bold;
+}
+body {
+  background-color: var(--bg_body);
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nav-button-favourites {
+  background-color: var(--bg_default);
+  color: var(--body-text);
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid var(--lines-color);
+}
+#nav-button-dark {
+  background-color: var(--bg_default);
+  color: var(--body-text);
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid var(--lines-color);
+}
+#welcome-color {
+  font-size: x-large;
+  font-weight: 900;
+  color: var(--brand-secondary);
+  width: 445px;
+}
+.welcome-statement-decoration {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.main-decoration {
+  display: flex;
+  flex-direction: column;
+}
+.welcome-statement-decoration span {
+  font-size: medium;
+  width: 445px;
+  color: var(--body-text);
+}
+article {
+  display: flex;
+  flex-direction: column;
+}
+.black-background {
+  position: relative;
+  display: flex;
+  background-color: #333332;
+  width: 100vw;
+  max-height: 278px;
+}
+.text-content {
+  display: flex;
+  margin-left: 20vw;
+  flex-direction: column;
+  width: 41vw;
+  padding: 30px;
+  padding-bottom: 11px;
+}
+.category {
+  color: var(--brand-secondary);
+  font-weight: 400;
+  font-size: medium;
+}
+.topic {
+  font-weight: 800;
+  font-size: x-large;
+}
+.description {
+  color: var(--bg_default);
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: medium;
+}
+
+#text-color {
+  color: var(--dark-body-text);
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+.rating {
+  color: #e9961a;
+}
+.card {
+  position: absolute;
+  z-index: 1;
+  left: 60vw;
+  margin-top: 30px;
+  width: 21vw;
+  background-color: var(--bg_default);
+}
+.img {
+  padding: 2px;
+  min-height: 140px;
+  object-fit: cover;
+}
+.description {
+  margin-top: 10px;
+}
+#staticBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg_default);
+  padding: 10px;
+  display: none;
+}
+
+.triangles {
+  position: relative; /* Ensure the triangles are positioned relative to this container */
+  width: 100vw; /* Make the container full width */ /* Make the container full height */
+}
+
+.welcome-statement-decoration span {
+  color: var(--body-text);
+}
+.left-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid var(--brand-primary); /* Using vw (viewport width) unit */
+  border-right: 80vw solid transparent; /* Adjust the width relative to the container */
+  z-index: 1;
+}
+.container {
+  margin: 12px;
+}
+#angular {
+  font-weight: 800;
+}
+#auth {
+  color: var(--dark-brand-primary);
+}
+.add {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--lines-color);
+}
+.question {
+  color: var(--body-text);
+  font-weight: 600;
+  margin-left: 20px;
+  margin-top: 21px;
+}
+
+.right-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid var(--brand-secondary);
+  border-left: 80vw solid transparent;
+  left: 20vw;
+}
+.add-button {
+  gap: 5px;
+  display: flex;
+  background-color: var(--brand-secondary);
+  font-size: 21px;
+
+  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 15px;
+  border: 0;
+  color: var(--bg_default);
+  justify-content: center;
+}
+.add-button ion-icon {
+  color: var(--bg_body);
+  font-size: 28px;
+}

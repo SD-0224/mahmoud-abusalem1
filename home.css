@@ -14,13 +14,13 @@
   --dark-lines-color: #000000;
   --dark-body-text: #ededed;
   --dark-heart-color: #dc143c;
-  --auther :#8E8E8E;
+  --auther: #8e8e8e;
 }
-*{
+* {
   box-sizing: border-box;
   color: var(--body-text);
 }
-.header{
+.header {
   background-color: var(--bg_default);
 }
 
@@ -45,16 +45,15 @@ nav {
 #title {
   padding-top: 10px;
   color: var(--brand-primary);
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
 }
 body {
   background-color: var(--bg_body);
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #nav-button-favourites {
   background-color: var(--bg_default);
@@ -83,31 +82,22 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  
 }
 .main-decoration {
-  
   display: flex;
   flex-direction: column;
 }
 .welcome-statement-decoration span {
   font-size: medium;
   width: 445px;
- 
 }
-
-
-
-
-
-.content{
+.content {
   display: flex;
   flex-direction: column;
   padding: none;
   width: 100%;
   background-color: var(--bg_body);
   align-items: center;
-
 }
 #wrapper {
   display: flex;
@@ -115,27 +105,20 @@ body {
   width: 100vw;
 }
 
-#default{
+#default {
   color: var(--body-text);
 }
 
-
-
-
-#result{
+#result {
   color: var(--body-text);
   margin: 15px;
   font-size: x-large;
   font-weight: bolder;
-  width: 90vw;    
+  width: 90vw;
   margin-bottom: 25px;
-
-  
-
-
 }
 
-.welcome-statement-decoration span{
+.welcome-statement-decoration span {
   color: var(--body-text);
 }
 .left-triangle {
@@ -148,20 +131,19 @@ body {
 }
 
 .right-triangle {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 50px solid var(--brand-secondary);
-    border-left: 80vw solid transparent;
-    left: 20vw;
-  
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid var(--brand-secondary);
+  border-left: 80vw solid transparent;
+  left: 20vw;
 }
 
 .triangles {
   position: relative; /* Ensure the triangles are positioned relative to this container */
   width: 100vw; /* Make the container full width */ /* Make the container full height */
 }
-.card-table{
+.card-table {
   width: 90vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, 236px);
@@ -170,50 +152,46 @@ body {
 }
 .card:hover {
   transform: translateY(-10px);
-  
 }
-.img{
+.img {
   min-height: 140px;
   object-fit: cover;
   margin-bottom: -10px;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px; 
-  }
-.card{
-  
+  border-top-right-radius: 10px;
+}
+.card {
   width: 236px;
   border-radius: 10px;
   background-color: var(--bg_default);
 }
-.container{
+.container {
   padding: 13px;
   padding-top: 4px;
 }
-.Category{
+.Category {
   font-size: 12.5px;
   font-weight: 600;
   color: var(--body-text);
   margin-bottom: 0;
-
 }
-.topic{
+.topic {
   color: var(--body-text);
   margin-bottom: 20px;
   margin-top: 0;
 }
-.rating{
+.rating {
   color: #e9961a;
 }
-.author{
+.author {
   color: var(--auther);
   font-weight: 200;
   margin-bottom: 5px;
   margin-top: 10px;
   font-size: 13px;
   font-weight: 500;
-  
 }
-.search-bar{
+.search-bar {
   display: flex;
   width: 90vw;
   border: 1px solid var(--lines-color);
@@ -223,36 +201,37 @@ body {
   box-shadow: 1px 1px 5px 1px var(--lines-color);
   border-radius: 10px;
 }
-#searchWithIcon{
+#search :focus {
+  outline: none;
+  border-color: var(--bg_default);
+}
+#searchWithIcon {
   display: flex;
   width: calc(65vw + 30px);
   justify-content: space-around;
   align-items: center;
 }
-#searchWithIcon ion-icon{
+#searchWithIcon ion-icon {
   width: 30px;
   font-size: 20px;
   color: var(--body-text);
-
 }
-#searchWithIcon input{
+#searchWithIcon input {
   width: 65vw;
   background-color: var(--bg_default);
   border: 0;
   font-size: 20px;
   height: 45px;
   padding: 0;
-
 }
-.filter{
+.filter {
   display: flex;
   width: calc(25vw - 30px);
   justify-content: center;
   align-items: center;
   height: 55px;
-
 }
-#dropDownDiv{
+#dropDownDiv {
   width: calc(12vw - 15px);
   height: 55px;
   display: flex;
@@ -260,30 +239,101 @@ body {
   justify-content: center;
   align-items: center;
   border-left: 1px solid var(--lines-color);
-
-  
 }
-#dropDownDiv select{
+#dropDownDiv select {
   border: 0;
   width: calc(10vw - 15px);
   height: 30px;
   background-color: var(--bg_default);
-
 }
-.sort-label{
+.sort-label {
   font-size: 12px;
   background-color: var(--bg_default);
   font-weight: 500;
-  width: calc(10vw - 20px) ;
+  width: calc(10vw - 20px);
 }
-.stars{
+.stars {
   display: flex;
   align-items: center;
   height: 20px;
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 621px) {
+  #dropDownDiv {
+    position: relative;
+    border-top: 1px solid var(--lines-color);
+    width: 45vw;
+  }
+  .card-table {
+    grid-template-columns: repeat(auto-fit, 237px);
+  }
+
+  #dropDownDiv select {
+    width: 45vw;
+  }
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter {
+    width: 90vw;
+    box-shadow: 1px 1px 5px 1px var(--lines-color);
+    border-radius: 0 0 5px 5px;
+  }
+
+  .dropDownDiv select {
+    width: 45vw;
+  }
+  .sort-label {
+    width: 45vw;
+  }
+  .left {
+    border-left: 1px solid var(--bg_default);
+  }
+}
+@media screen and (max-width: 560px) {
+  .card-table {
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 90vw);
+  }
+  .buttons-decoration span {
+    display: none;
+  }
+
   .card {
-      width: calc(50% - 10px); /* 50% width minus half the gap */
+    width: 100%;
+  }
+  #welcome-color {
+    width: 320px;
+  }
+  .welcome-statement-decoration span {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .welcome-statement-decoration span {
+    font-size: small;
+  }
+  /*#welcome-color {
+   
+    font-size: medium;
+  } */
+
+  .left-triangle {
+    border-top: 30px solid var(--brand-primary);
+  }
+  .right-triangle {
+    border-top: 30px solid var(--brand-secondary);
   }
 }
 
+#staticBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg_default);
+  padding: 10px;
+  display: none;
+}

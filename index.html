@@ -22,8 +22,8 @@
     <div class="nav-decoration">
       <div id="title">Web Topics</div>
       <div class="buttons-decoration">
-        <button id="nav-button-dark"> <ion-icon name="moon-outline"></ion-icon></span> Dark Mode</button>
-        <button id="nav-button-favourites"> <ion-icon name="heart-outline"></ion-icon> Favourites</button>
+        <button id="nav-button-dark"> <ion-icon name="moon-outline"></ion-icon><span> Dark Mode</span> </button>
+        <button id="nav-button-favourites"> <ion-icon name="heart-outline"></ion-icon><span> Favourites</span> </button>
       </div>
     </div>
   </nav>
@@ -46,7 +46,7 @@
           <input type="text" id="search" name="fname" placeholder=" Search the website...">
         </div>
         <div class="filter">
-        <div id="dropDownDiv">
+        <div id="dropDownDiv" class="left">
           <label class="sort-label">Sort by:</label>
           <select name="" id="leftDropDown">
             <option value="default" selected hidden id="default">Default</option>
@@ -427,6 +427,9 @@
     </div>
     </div>
   </main>
+  <div id="staticBar">
+    FAVOURITE COURSES
+  </div>
 </body>
 <script>
   let flag = 0;
@@ -467,6 +470,16 @@
         );
         document.documentElement.style.setProperty("--body-text", "#333333");
         flag = 0;
+      }
+    });
+
+
+    document.getElementById('nav-button-favourites').addEventListener('click', function() {
+      var bar = document.getElementById('staticBar');
+      if (bar.style.display === 'none') {
+        bar.style.display = 'block';
+      } else {
+        bar.style.display = 'none';
       }
     });
 </script>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="details.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav class="header">
+      <div class="nav-decoration">
+        <div id="title">Web Topics</div>
+        <div class="buttons-decoration">
+          <button id="nav-button-dark">
+            <ion-icon name="moon-outline"></ion-icon> Dark Mode
+          </button>
+          <button id="nav-button-favourites">
+            <ion-icon name="heart-outline"></ion-icon> Favourites
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="main-decoration">
+      <div class="header">
+        <div class="triangles">
+          <div class="left-triangle"></div>
+          <div class="right-triangle"></div>
+        </div>
+
+        <div class="welcome-statement-decoration">
+          <span id="welcome-color">Welcome to our website!</span>
+          <span
+            >We have a new design that's fresh, modern, and easy to use.</span
+          >
+        </div>
+      </div>
+      <article>
+        <div class="black-background">
+          <div class="text-content">
+            <div class="category">Frontend Frameworks and Libraries</div>
+            <div class="topic" id="text-color">Angular</div>
+            <div class="stars" id="text-color">
+              <ion-icon name="star" class="rating"></ion-icon
+              ><ion-icon name="star" class="rating"></ion-icon
+              ><ion-icon name="star" class="rating"></ion-icon
+              ><ion-icon name="star" class="rating"></ion-icon>
+            </div>
+            <div class="description" id="text-color">
+              Angular is a popular, open-source, and comprehensive front-end
+              framework for building complex web applications. It is maintained
+              by Google and offers a wide range of features, including
+              declarative templates, dependency injection, end-to-end testing,
+              and more. Angular uses TypeScript, a superset of JavaScript, to
+              provide strong typing and other advanced features for large-scale
+              projects.
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="img"
+              src="./icons/angular.png"
+              alt="Avatar"
+              width="100%"
+            />
+            <div class="container">
+              <p>
+                <span id="angular">ANGULAR</span> by
+                <a href="" id="auth"> Jessica Davis</a>
+              </p>
+              <div class="add">
+                <div class="question">Interested in this topic?</div>
+                <button class="add-button">
+                  Add to Favourites <ion-icon name="heart-outline"></ion-icon>
+                </button>
+                <div id="credits">Unlimited Credits</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div id="staticBar">FAVOURITE COURSES</div>
+    </main>
+  </body>
+  <script>
+    let flag = 0;
+    document.getElementById("nav-button-dark").addEventListener("click", () => {
+      if (flag === 0) {
+        document.documentElement.style.setProperty(
+          "--brand-primary",
+          "#0768ac"
+        );
+        document.documentElement.style.setProperty(
+          "--brand-secondary",
+          "#03c180"
+        );
+        document.documentElement.style.setProperty("--bg_default", "#1a1a1a");
+        document.documentElement.style.setProperty("--bg_body", "#282828");
+        document.documentElement.style.setProperty("--lines-color", "#000000");
+        document.documentElement.style.setProperty("--body-text", "#ededed");
+        flag = 1;
+      } else if (flag === 1) {
+        document.documentElement.style.setProperty(
+          "--brand-primary",
+          "#0768ac"
+        );
+        document.documentElement.style.setProperty(
+          "--brand-secondary",
+          "#03c180"
+        );
+        document.documentElement.style.setProperty("--bg_default", "#ffffff");
+        document.documentElement.style.setProperty("--bg_body", "#f0f9ff");
+        document.documentElement.style.setProperty("--lines-color", "#dddddd");
+        document.documentElement.style.setProperty("--body-text", "#333333");
+        flag = 0;
+      }
+    });
+
+    document
+      .getElementById("nav-button-favourites")
+      .addEventListener("click", function () {
+        var bar = document.getElementById("staticBar");
+        if (bar.style.display === "none") {
+          bar.style.display = "block";
+        } else {
+          bar.style.display = "none";
+        }
+      });
+  </script>
+</html>
