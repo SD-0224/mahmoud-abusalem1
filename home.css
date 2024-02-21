@@ -93,7 +93,7 @@ body {
 .welcome-statement-decoration span {
   font-size: medium;
   width: 445px;
- 
+  color: var(--body-text);
 }
 
 
@@ -135,9 +135,6 @@ body {
 
 }
 
-.welcome-statement-decoration span{
-  color: var(--body-text);
-}
 .left-triangle {
   position: absolute;
   width: 0;
@@ -285,5 +282,38 @@ body {
   .card {
       width: calc(50% - 10px); /* 50% width minus half the gap */
   }
+  #dropDownDiv{
+    width: 45vw;
+
+  }
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter{
+    width: 90vw;
+  }
+  #leftDropDown{
+    width:45vw ;
+  }
+  #rightDropDown{
+    width:45vw ;
+  }
+  
+  .dropDownDiv select{
+    width: 45vw;
+  }
+  .sort-label{
+    width: 45vw;
+  }
 }
 
+#staticBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg_default);
+  padding: 10px;
+  display: none;
+}

@@ -426,6 +426,9 @@
       </div>
     </div>
     </div>
+    <div id="staticBar">
+      FAVOURITE COURSES
+    </div>
   </main>
 </body>
 <script>
@@ -469,6 +472,16 @@
         flag = 0;
       }
     });
+
+    document.getElementById('nav-button-favourites').addEventListener('click', function() {
+      var bar = document.getElementById('staticBar');
+      if (bar.style.display === 'none') {
+        bar.style.display = 'block';
+      } else {
+        bar.style.display = 'none';
+      }
+    });
+
 </script>
 
 </html>
