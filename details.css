@@ -162,6 +162,20 @@ article {
 .description {
   margin-top: 10px;
 }
+.sub-topics{
+    display: flex;
+    margin: 30px;
+    margin-left: 20vw;
+    flex-direction: column;
+    width: 38vw;
+    padding: 30px;
+    padding-bottom: 11px;
+    border: 1px solid var(--auther);
+}
+.head-topic{
+  font-weight: 800;
+    font-size: x-large;
+}
 #staticBar {
   position: fixed;
   bottom: 0;
