@@ -326,6 +326,29 @@ body {
   .right-triangle {
     border-top: 30px solid var(--brand-secondary);
   }
+  #dropDownDiv {
+    width: 45vw;
+  }
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter {
+    width: 90vw;
+  }
+  #leftDropDown {
+    width: 45vw;
+  }
+  #rightDropDown {
+    width: 45vw;
+  }
+
+  .dropDownDiv select {
+    width: 45vw;
+  }
+  .sort-label {
+    width: 45vw;
+  }
 }
 
 #staticBar {
