@@ -82,6 +82,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  padding-bottom: 10px;
 }
 .main-decoration {
   display: flex;
@@ -257,6 +258,32 @@ body {
   align-items: center;
   height: 20px;
 }
+.two-cards {
+  display: flex;
+  gap: 5px;
+}
+.two-cards .topic {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.container-fav {
+  padding: 10px;
+}
+.my-fav {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.card-fav {
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 1px 1px 5px 1px var(--lines-color);
+  height: 100px;
+  width: 100px;
+}
+.card-fav img {
+  min-height: 50px;
+}
 
 @media screen and (max-width: 621px) {
   #dropDownDiv {
@@ -357,6 +384,8 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--bg_default);
-  padding: 10px;
+  padding-left: 5vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: none;
 }

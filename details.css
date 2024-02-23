@@ -25,7 +25,7 @@
 }
 #credits {
   font-size: small;
-  color: var(--body-text);
+  color: var(--auther);
   align-self: center;
   margin: 5px;
 }
@@ -89,6 +89,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  margin-bottom: 10px;
 }
 .main-decoration {
   display: flex;
@@ -152,7 +153,7 @@ article {
   left: 60vw;
   margin-top: 30px;
   width: 21vw;
-  background-color: var(--bg_default);
+  background-color: white;
 }
 .img {
   padding: 2px;
@@ -162,19 +163,69 @@ article {
 .description {
   margin-top: 10px;
 }
-.sub-topics{
-    display: flex;
-    margin: 30px;
-    margin-left: 20vw;
-    flex-direction: column;
-    width: 38vw;
-    padding: 30px;
-    padding-bottom: 11px;
-    border: 1px solid var(--auther);
+.sub-topics {
+  display: flex;
+  flex-direction: column;
+  width: 38vw;
+  padding: 15px;
+  padding-left: 30px;
+  border: 1px solid var(--lines-color);
+  background-color: var(--bg_default);
 }
-.head-topic{
+.sub {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 38vw;
+  margin-left: 20vw;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1 solid var(--lines-color);
+}
+#first {
+  padding-top: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#heart {
+  margin-inline: 3px;
+  font-size: x-large;
+  color: var(--heart-color);
+}
+#copyright {
+  display: flex;
+  font-size: large;
+  margin-top: 30px;
+  align-self: center;
+  justify-content: center;
+}
+#last {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 0;
+}
+#inner {
+  justify-self: center;
+  border-top: 0;
+}
+.first-line {
   font-weight: 800;
-    font-size: x-large;
+  font-size: x-large;
+}
+.inner-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: large;
+}
+#check {
+  color: #03c180;
+  padding-right: 5px;
+  font-size: x-large;
+}
+.head-topic {
+  font-weight: 800;
+  font-size: x-large;
 }
 #staticBar {
   position: fixed;
@@ -206,7 +257,11 @@ article {
   margin: 12px;
 }
 #angular {
+  color: black;
   font-weight: 800;
+}
+.container p {
+  color: black;
 }
 #auth {
   color: var(--dark-brand-primary);
@@ -215,10 +270,10 @@ article {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid var(--lines-color);
+  border: 1px solid rgb(192, 190, 190);
 }
 .question {
-  color: var(--body-text);
+  color: black;
   font-weight: 600;
   margin-left: 20px;
   margin-top: 21px;
@@ -237,16 +292,15 @@ article {
   display: flex;
   background-color: var(--brand-secondary);
   font-size: 21px;
-
   margin: 20px;
   margin-top: 10px;
   margin-bottom: 5px;
   padding: 15px;
   border: 0;
-  color: var(--bg_default);
+  color: white;
   justify-content: center;
 }
 .add-button ion-icon {
-  color: var(--bg_body);
+  color: white;
   font-size: 28px;
 }
